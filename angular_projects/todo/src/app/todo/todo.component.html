@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)]="title" placeholder="enter a task">
+<input type="text" [(ngModel)]="description" placeholder="task description">
+<button (click)="addTask()" class="btn">Add Task</button>
+<br>
+<br>
+<ul>
+	<li *ngFor="let task of tasks">{{ task.title }} - {{ task.description }} </li>
+</ul>
